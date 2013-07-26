@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Applicazione -->
+    
+  	<string name="app_name">Katana</string>
+    <string name="app_view_name">Dividi/Unisci con Katana</string>
+        
+    <!-- Bit -->
+    
+    <string name="bit_error">Errore</string>
+	<string name="bit_confirm">Conferma</string>
+	<string name="bit_split">Dividi</string>
+	<string name="bit_join">Unisci</string>
+	<string name="bit_tutorial">Istruzioni</string>
+	<string name="bit_browse">Sfoglia</string>
+    
+    <!-- Alert mostrato al primo avvio -->
+    
+    <string name="alert_first_start">Grazie per aver scelto Katana!\nQui potrai configurare l\'applicazione.\nPer dividere/unire un file, ti basta aprirlo in Katana utilizzando un file manager!</string>
+    <string name="btn_dont_show_this_again">Non mostrare più questo messaggio</string>
+    
+    <!-- Toast mostrato durante un eventuale crash -->
+    
+    <string name="toast_crash_text">Katana è andata in crash, ma non preoccuparti! Controlla il rapporto di crash e invialo allo sviluppatore!</string>
+   
+   	<!-- Activity Main --> 
+   	
+   	<string name="pref_settings">Impostazioni</string>
+   	<string name="pref_preserve_original_file">Mantieni file originale</string>
+   	<string name="pref_preserve_original_file_on">Il file originale VERRA\' MANTENUTO dopo lo split.</string>
+   	<string name="pref_preserve_original_file_off">Il file originale VERRA\' CANCELLATO dopo lo split.</string>
+   	
+   	<string name="pref_support">Supporto</string>
+   	
+    <string name="pref_disable_acra">Non inviare rapporti di crash allo sviluppatore</string>
+    <string name="pref_acra_disabled">I rapporti NON verranno inviati (sconsigliato!)</string>
+    <string name="pref_acra_enabled">I rapporti verranno inviati (raccomandato!)</string>
+   
+    <string name="pref_acra_user_email">Indirizzo email di contatto</string>
+	<string name="pref_acra_user_email_summary">Compila questo campo se desideri essere contattato dallo sviluppatore dopo la segnalazione di un crash.</string>
+			
+	<!-- Activity Katana -->
+	
+	<string name="rate_dialog_title">Vota %1$s</string>
+	<string name="rate_dialog_message">Se ti piace %1$s, perché non lasciare un bel voto?\nGrazie per il tuo supporto!</string>
+	<string name="rate_dialog_btn_rate_it">Vota!</string>
+	<string name="rate_dialog_btn_remind_me_later">Ricordamelo più tardi</string>
+	<string name="rate_dialog_btn_no_thanks">No grazie</string>
+	
+	<string name="tutorial_normal_screen">Scrivi la dimensione in cui dividere il file nel campo apposito.\nEsempi: \"4KB\", \"8MB\", \"15GB\", \"16kb\", \"23mb\", \"42gb\".\nSono accettati solo lettere e numeri.</string>
+		
+	<string name="textview_file_name">File: \"%1$s\"</string>
+	<string name="textview_file_size">Dimensione: %1$.2f %2$s</string>
+	<string name="textview_split_size">Dimensione di \"split\"</string>
+	<string name="textview_example_one">e.g. \"4KB\", \"8MB\", \"15GB\", \"16kb\", \"23mb\", \"42gb\"… </string>
+	<string name="textview_example_two">Verranno presi in considerazione solo lettere e numeri. Unità di informazione accettate: KB, MB, GB (\"case unsensitive\").</string>
+	<string name="textview_example_three">Spazi e altri simboli verranno ignorati.</string>
+	<string name="textview_output_directory">Cartella di output</string>
+	
+	<string name="err_file_is_too_small">Il file \"%1$s\" è troppo piccolo!\nIl minimo consentito è di %2$d KB!</string>
+	<string name="err_split_size_field_empty">Il campo della dimensione di \"split\" è vuoto!</string>
+	<string name="err_split_size_field_no_numbers">Nessun numero rilevato nel campo della dimensione di \"split\"!</string>
+	<string name="err_split_size_field_invalid_unit">Unità di informazione non valida nel campo della dimensione di \"split\": \"%1$s\"!</string>
+	<string name="err_split_size_field_invalid_split_size">La dimensione di \"split\" deve essere maggiore di %1$d KB e minore della dimensione del file!</string>
+	<string name="err_split_size_field_too_many_pieces">Troppe parti in output (%1$d) per la dimensione di \"split\" fornita (il massimo consentito è di %2$d)!</string>
+	<string name="err_output_directory_field_no_such_dir">La cartella \"%1$s\" non esiste!</string>
+	<string name="err_already_splitting_file">Katana sta già dividendo questo file!\nAttendi che il processo sia stato completato e prova di nuovo!</string>
+	<string name="err_already_joining_file">Katana stà già ricostruendo questo file!\nAttendi che il processo sia stato completato e prova di nuovo!</string>
+	<string name="err_join_missing_file">Unione dei file annullata.\nIl seguente file è mancante: \"%1$s\".</string>
+	
+	<string name="msg_split_confirm">Numero di parti in output: %1$d.\nDesideri continuare?</string>
+	<string name="msg_join_confirm">Desideri continuare con l\'unione dei file?</string>
+	
+	<string name="toast_split_running">Katana sta dividendo il file \"%1$s\". Clicca per interrompere.</string>
+	<string name="toast_split_queued">Katana ha messo in coda la divisione del file \"%1$s\"</string>
+	<string name="toast_join_running">Katana sta ricostruendo il file \"%1$s\". Clicca per interrompere.</string>
+	<string name="toast_join_queued">Katana ha messo in coda la ricostruzione del file \"%1$s\"</string>
+	<string name="toast_split_completed">Katana ha diviso correttamente il file \"%1$s\"</string>
+	<string name="toast_join_completed">Katana ha ricostruito correttamente il file \"%1$s\"</string>
+		
+	<!--  KatanaSplitTask -->
+	
+	<string name="notif_split_running">Divisione in corso.</string>
+	<string name="notif_split_queued">Divisione in coda.</string>
+	<string name="notif_join_running">Unione in corso.</string>
+	<string name="notif_join_queued">Unione in coda.</string>
+	<string name="notif_split_end">File diviso correttamente!</string>
+	<string name="notif_join_end">File unito correttamente!</string>
+	<string name="notif_split_cancel">Divisione annullata!</string>
+	<string name="notif_join_cancel">Unione annullata!</string>
+	
+	<!-- DirectoryChooser -->
+	
+	<string name="cancel_label">Cancella</string>
+    <string name="confirm_label">Conferma</string>
+    <string name="selected_folder_label">Seleziona cartella:</string>
+    <string name="create_folder_label">Crea cartella</string>
+    <string name="create_folder_msg">Creare una nuova cartella con nome "%1$s"?</string>
+    <string name="create_folder_success">Nuova cartella creata</string>
+    <string name="create_folder_error_no_write_access">Impossibile scrivere in questa cartella</string>
+    <string name="create_folder_error_already_exists">La cartella esiste già!</string>
+    <string name="create_folder_error">Impossibile creare la cartella</string>
+    <string name="up_label">Su</string>
+    
+</resources>

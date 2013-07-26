@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!--  Impostazioni -->
+    <PreferenceCategory
+        android:summary="@string/pref_settings"
+        android:title="@string/pref_settings" >
+        <!-- Disabilita Log -->
+        <CheckBoxPreference android:key="com.matteopacini.katana.preserve_original_file"
+    		android:title="@string/pref_preserve_original_file"
+    		android:summaryOn="@string/pref_preserve_original_file_on"
+    		android:summaryOff="@string/pref_preserve_original_file_off"
+    		android:defaultValue="true"/>
+    </PreferenceCategory>
+    
+     <!--  Supporto -->
+    <PreferenceCategory
+        android:summary="@string/pref_support"
+        android:title="@string/pref_support" >
+        <!-- Disabilita Log -->
+        <CheckBoxPreference android:key="acra.disable"
+    		android:title="@string/pref_disable_acra"
+    		android:summaryOn="@string/pref_acra_disabled"
+    		android:summaryOff="@string/pref_acra_enabled"
+    		android:defaultValue="false"/>
+        <!-- Indirizzo email di contatto -->
+         <EditTextPreference android:key="acra.user.email"
+    		android:title="@string/pref_acra_user_email"
+    		android:summary="@string/pref_acra_user_email_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

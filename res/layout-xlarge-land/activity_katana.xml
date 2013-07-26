@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/exampleThreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/exampleOneTextView"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="@string/textview_example_three"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/exampleTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/exampleOneTextView"
+        android:gravity="center"
+        android:text="@string/textview_example_two"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/exampleOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/splitSizeTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/splitSizeTextView"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="@string/textview_example_one"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/splitSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fileSizeTextView"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/textview_split_size"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/fileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="@string/textview_file_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/outputDirectoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/splitSizeEditText"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="@string/textview_output_directory"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/outputDirectoryEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exampleTwoTextView"
+        android:layout_alignRight="@+id/exampleTwoTextView"
+        android:layout_below="@+id/outputDirectoryTextView"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/fileSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fileNameTextView"
+        android:gravity="center"
+        android:text="@string/textview_file_size"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/splitSizeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exampleThreeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus android:layout_height="wrap_content" />
+    </EditText>
+
+    <Button
+        android:id="@+id/browseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/splitButton"
+        android:layout_alignLeft="@+id/splitSizeEditText"
+        android:layout_alignRight="@+id/splitSizeEditText"
+        android:text="@string/bit_browse" />
+
+    <Button
+        android:id="@+id/splitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/browseButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/browseButton"
+        android:layout_marginBottom="78dp"
+        android:gravity="center"
+        android:text="@string/bit_split" />
+
+</RelativeLayout>

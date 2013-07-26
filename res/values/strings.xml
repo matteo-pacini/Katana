@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Applicazione -->
+    
+    <string name="app_name">Katana</string>
+    <string name="app_view_name">Split/Join with Katana</string>
+        
+    <!-- Bit -->
+    
+    <string name="bit_error">Error</string>
+	<string name="bit_confirm">Confirm</string>
+	<string name="bit_split">Split</string>
+	<string name="bit_join">Join</string>
+	<string name="bit_tutorial">Tutorial</string>
+	<string name="bit_browse">Browse</string>
+    
+    <!-- Alert mostrato al primo avvio -->
+    
+    <string name="alert_first_start">Thank you for choosing Katana!\nHere you will be able to configure the application.\nIf you just want to split/join a file, open the file in Katana using a file manager!</string>
+    <string name="btn_dont_show_this_again">Don\'t show this again</string>
+    
+    <!-- Toast mostrato durante un eventuale crash -->
+    
+    <string name="toast_crash_text">Katana has crashed, but don\'t worry! Review the crash report and send it to the developer!</string>
+   
+   	<!-- Activity Main --> 
+   	
+   	<string name="pref_settings">Settings</string>
+   	<string name="pref_preserve_original_file">Preserve original file</string>
+   	<string name="pref_preserve_original_file_on">Original file WILL BE PRESERVED after split..</string>
+   	<string name="pref_preserve_original_file_off">Original file WILL BE DELETED after split.</string>
+   	
+   	<string name="pref_support">Support</string>
+   	
+    <string name="pref_disable_acra">Stop sending crash reports to the developer</string>
+    <string name="pref_acra_disabled">Reports will NOT be sent (not recommended!)</string>
+    <string name="pref_acra_enabled">Reports will be sent (highly recommended!)</string>
+   
+    <string name="pref_acra_user_email">Your contact email</string>
+	<string name="pref_acra_user_email_summary">Fill this field if you want to be contacted from the developer when a crash occurs.</string>
+			
+	<!-- Activity Katana -->
+	
+	<string name="rate_dialog_title">Rate %1$s</string>
+	<string name="rate_dialog_message">If you enjoy using %1$s, please take a moment to rate it.\nThanks for your support!</string>
+	<string name="rate_dialog_btn_rate_it">Rate it!</string>
+	<string name="rate_dialog_btn_remind_me_later">Remind me later</string>
+	<string name="rate_dialog_btn_no_thanks">No thanks</string>
+	
+	<string name="tutorial_normal_screen">You can write the split size in the split size field.\nExamples are: \"4KB\", \"8MB\", \"15GB\", \"16kb\", \"23mb\", \"42gb\".\nOnly letters and numbers are accepted. </string>
+		
+	<string name="textview_file_name">File: \"%1$s\"</string>
+	<string name="textview_file_size">Size: %1$.2f %2$s</string>
+	<string name="textview_split_size">Split Size</string>
+	<string name="textview_example_one">e.g. \"4KB\", \"8MB\", \"15GB\", \"16kb\", \"23mb\", \"42gb\"… </string>
+	<string name="textview_example_two">Only letters and numbers are taken into consideration. Units of information allowed: KB, MB, GB (case unsensitive).</string>
+	<string name="textview_example_three">Spaces and other symbols are ignored.</string>
+	<string name="textview_output_directory">Output directory</string>
+	
+	<string name="err_file_is_too_small">File \"%1$s\" is too small!\nMinimum allowed is %2$d KB!</string>
+	<string name="err_split_size_field_empty">Split size field is empty!</string>
+	<string name="err_split_size_field_no_numbers">No numbers in split size field!</string>
+	<string name="err_split_size_field_invalid_unit">Invalid unit of information in split size field: \"%1$s\"!</string>
+	<string name="err_split_size_field_invalid_split_size">Split size must be greater than %1$d KB and less than file size!</string>
+	<string name="err_split_size_field_too_many_pieces">Too many pieces (%1$d) for provided split size (maximum allowed is %2$d)!</string>
+	<string name="err_output_directory_field_no_such_dir">\"%1$s\" folder doesn\'t exist!</string>
+	<string name="err_already_splitting_file">Katana is already splitting this file!\nWait for the task to finish and try again!</string>
+	<string name="err_already_joining_file">Katana is already rebuilding this file!\nWait for the task to finish and try again!</string>
+	<string name="err_join_missing_file">Joining aborted.\nA file is missing: \"%1$s\".</string>
+	
+	<string name="msg_split_confirm">Expected pieces: %1$d.\nDo you wish to continue?</string>
+	<string name="msg_join_confirm">Do you wish to continue?</string>
+	
+	<string name="toast_split_running">Katana is splitting file \"%1$s\". Click to abort.</string>
+	<string name="toast_split_queued">Katana queued splitting of file \"%1$s\"</string>
+	<string name="toast_join_running">Katana is joining file \"%1$s\". Click to abort.</string>
+	<string name="toast_join_queued">Katana queued joining of file \"%1$s\"</string>
+	<string name="toast_split_completed">Katana splitted \"%1$s\" successfully</string>
+	<string name="toast_join_completed">Katana rebuilt \"%1$s\" successfully</string>
+	
+	<!--  KatanaSplitTask -->
+	
+	<string name="notif_split_running">Splitting in progress.</string>
+	<string name="notif_split_queued">Splitting queued.</string>
+	<string name="notif_join_running">Joining in progress.</string>
+	<string name="notif_join_queued">Joining queued</string>
+	<string name="notif_split_end">File splitted successfully!</string>
+	<string name="notif_join_end">File joined successfully!</string>
+	<string name="notif_split_cancel">Splitting aborted!</string>
+	<string name="notif_join_cancel">Joining aborted!</string>
+	
+	<!-- DirectoryChooser -->
+	
+	<string name="cancel_label">Cancel</string>
+    <string name="confirm_label">Confirm</string>
+    <string name="selected_folder_label">Selected folder:</string>
+    <string name="create_folder_label">Create folder</string>
+    <string name="create_folder_msg">Create new folder with name "%1$s"?</string>
+    <string name="create_folder_success">Created new folder</string>
+    <string name="create_folder_error_no_write_access">Cannot write to this folder</string>
+    <string name="create_folder_error_already_exists">Folder already exists</string>
+    <string name="create_folder_error">Could not create folder</string>
+    <string name="up_label">Up</string>
+        
+</resources>
