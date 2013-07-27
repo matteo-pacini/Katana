@@ -17,7 +17,7 @@
     
     <!-- Alert mostrato al primo avvio -->
     
-    <string name="alert_first_start">Thank you for choosing Katana!\nHere you will be able to configure the application.\nIf you just want to split/join a file, open the file in Katana using a file manager!</string>
+    <string name="alert_first_start">Thank you for choosing Katana!\nHere you will be able to configure the application.\nIf you just want to split/join a file, open the file in Katana using a file manager!\nDon\'t forget that Katana is now open source!\nHead to http://github.com/Zi0P4tch0/Katana to know more.</string>
     <string name="btn_dont_show_this_again">Don\'t show this again</string>
     
     <!-- Toast mostrato durante un eventuale crash -->
